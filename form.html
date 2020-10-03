@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Form</title>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-lg navbar-expand-md" style="background-color:lightcoral;">
+
+        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="mypage_bootstrap.html">Home </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="projects.html">Projects</a>
+                </li>
+            </ul>
+        </div>
+        <a class="ml-auto" href="https://github.com/christianpolanco"><img
+                src="https://maxcdn.icons8.com/Share/icon/p1em/Logos/github1600.png" style="height: 50px;"></a>
+    </nav>
+
+    <div class="container">
+        <h1>Add a New Interest</h1>
+        <form>
+            <div class="form-group">
+                <label>Interest Name</label>
+                <input type="text" class="form-control" placeholder="Name">
+            </div>
+
+            <div class="form-group">
+                <label for="comment">Text About Interest</label>
+                <textarea class="form-control" rows="5" id="comment"></textarea>
+            </div>
+            <div class="form-row">
+
+                <div class="form-group col-6">
+                    <label>Upload Local Image</label>
+                    <br>
+                    <input type="file">
+                </div>
+                <div class="form-group col-6">
+                    <label>Select # of tweets to display</label>
+                    <select class="form-control">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+
+            </div>
+            <div class="form-group">
+                <label>On a scale of 1 - 5, how interested in this are you?</label> <br>
+
+
+                <div class="form-check-inline">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="optradio">1
+                    </label>
+                </div>
+                <div class="form-check-inline">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="optradio">2
+                    </label>
+                </div>
+                <div class="form-check-inline">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="optradio">3
+                    </label>
+                </div>
+                <div class="form-check-inline">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="optradio">4
+                    </label>
+                </div>
+                <div class="form-check-inline">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="optradio">5
+                    </label>
+                </div>
+            </div>
+            <label>Login to finish submitting</label>
+            <div class="form-row">
+                <div class="form-group col-5" style="margin-left: 3%; margin-right: 3%;">
+                    <input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname"
+                        required>
+                </div>
+                <div class="form-group col-5" style="margin-left: 3%; margin-right: 3%;">
+                    <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd"
+                        required>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-success">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
